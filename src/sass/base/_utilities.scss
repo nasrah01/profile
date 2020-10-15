@@ -1,0 +1,62 @@
+// fonts
+$handwriting-font: 'Rock Salt', cursive;
+$content-font:  'Asar', serif;
+
+// font sizes
+$xsmall-size: 1.5rem;
+$small-size: 1.8rem;
+$small-medium: 2rem;
+$medium-size: 3rem;
+$medium-large: 5rem;
+$large-size: 7rem;
+$xlarge-size: 14rem;
+
+// colours
+$white-color: #fff;
+$black-color: #000;
+
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    scrollbar-width: thin;
+    scrollbar-color: $white-color transparent;
+}
+
+// scrollbar change
+*::-webkit-scrollbar {
+    width: 6px;
+}
+
+*::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: $black-color;
+    border-radius: 10px;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+
+body {
+    box-sizing: border-box;
+    line-height: 1.6;
+    font-family: $content-font;
+    overflow-x: hidden;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+a {
+    text-decoration: none;
+}

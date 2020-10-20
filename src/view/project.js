@@ -87,7 +87,6 @@ function createCanvas (canvas, image) {
 		renderer.setSize( canvas.clientWidth, canvas.clientHeight);
 		camera.aspect = canvas.clientWidth / canvas.clientHeight
 		camera.updateProjectionMatrix();
-
 	}
 	
 	function animate() {
@@ -115,8 +114,8 @@ function createCanvas (canvas, image) {
 export const projectImages = () => {
 	createCanvas(canvas01, coffee);
 
-	createCanvas(canvas02, data);
+	createCanvas(canvas02, weather);
 
-	createCanvas(canvas03, weather);
+	createCanvas(canvas03, data);
 };
 

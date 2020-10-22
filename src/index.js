@@ -14,39 +14,6 @@ ContactInfo.textChange();
 AboutMe.showMe();
 
 
-const mainNav = document.querySelectorAll('.navigation__ref');
-const hamburgerNav = document.querySelectorAll('.navigation__link');
-
-mainNav.forEach((list) => {
-	list.addEventListener('click', () => {
-		console.log(list);
-		setTimeout(() => {
-			removeHash();
-		}, 5);
-	});
-});
-
-hamburgerNav.forEach((nav) => {
-	nav.addEventListener('click', () => {
-		setTimeout(() => {
-			removeHash();
-		}, 5);
-	});
-});
-
-function removeHash() {
-	var uri = window.location.toString(); 
-  
-            if (uri.indexOf("#") > 0) { 
-                var clean_uri = uri.substring(0,  
-                                uri.indexOf("#")); 
-  
-                window.history.replaceState({},  
-                        document.title, clean_uri); 
-            } 
-};
-
-
 			const content = document.getElementById('site__canvas');
 			import { EffectComposer } from 'three/examples/jsm/postprocessing/EffectComposer.js';
 			import { ShaderPass } from 'three/examples/jsm/postprocessing/ShaderPass.js';

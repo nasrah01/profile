@@ -7,9 +7,8 @@ export const links = () => {
     const lineTwo = document.querySelector('.navigation__two');
     const lineThree = document.querySelector('.navigation__three');
     const burger = document.querySelectorAll('.navigation__line');
-    const list = document.querySelector('.navigation__list');
-    const items = document.querySelectorAll('.navigation__item');
-    const screen = document.querySelector('.navigation__screen');
+    const items = document.querySelectorAll('.navigation__content');
+    const screen = document.querySelector('.navigation__large');
     const hamburger = document.querySelector('.navigation__container');
 
     const tl = gsap.timeline({paused: true, reversed: true});
@@ -46,4 +45,27 @@ export const links = () => {
             }
         });
     })
+
+/* 
+            const mainNav = document.querySelectorAll('.navigation__ref');
+
+        mainNav.forEach((list) => {
+            list.addEventListener('click', () => {
+                setTimeout(() => {
+                    removeHash();
+                }, 5);
+            });
+        });
+
+        function removeHash() {
+            var uri = window.location.toString(); 
+        
+                    if (uri.indexOf("#") > 0) { 
+                        var clean_uri = uri.substring(0,  
+                                        uri.indexOf("#")); 
+        
+                        window.history.replaceState({},  
+                                document.title, clean_uri); 
+                    } 
+        }; */
 };

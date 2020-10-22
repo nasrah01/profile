@@ -13,6 +13,7 @@
         flex-wrap: nowrap;
         justify-content: space-around;
         font-family: $content-font;
+        opacity: 1;
 
         @media screen and (max-width: 1380px) and (min-height: 1000px) {
             height: 40vh;
@@ -28,20 +29,15 @@
             left: 50%;
             transform: translate(-50%, -50%);
             justify-content: center;
+            opacity: 0;
         }
     }
 
     &__ref {
+        color: #D9886A;
+
         &:hover {
-            color: #D9886A;
-        }
-
-        @media only screen and (max-width: 920px) {
-            color: #D9886A;
-
-            &:hover {
-                color: #594839;
-            }
+            color: #594839;
         }
     }
 
@@ -57,7 +53,7 @@
                 font-size: 2rem;
             }
 
-            @media screen and (max-width: 1380px) {
+            @media screen and (max-width: 900px) {
                 font-size: $medium-large;
             }
         }
@@ -67,8 +63,7 @@
 
             &:hover {
                 transform: rotateZ(-30deg);
-            }
-            
+            }   
         }
 
         &--topRight {

@@ -16,26 +16,12 @@
     }
 }
 
-@keyframes slideDown {
+@keyframes revealText {
     from {
         opacity: 0;
-        transform: translateY(-20px);
     }
 
     to {
         opacity: 1;
-        transform: translateY(0px);
-    }
-}
-
-@keyframes slideUp {
-    from {
-        opacity: 0;
-        transform:scale3d(.8, .5, .7);
-    }
-
-    to {
-        opacity: 1;
-        transform: scale3d(1, 1, 1);
     }
 }

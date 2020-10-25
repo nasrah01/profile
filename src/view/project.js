@@ -4,8 +4,8 @@ import {CSSPlugin} from "gsap/CSSPlugin";
 gsap.registerPlugin(ScrollTrigger, CSSPlugin);
 import * as THREE from 'three';
 import coffee from '../assets/coffee01.jpg';
-import data from '../assets/json.png';
-import weather from '../assets/weather01.png';
+import data from '../assets/login.png';
+import weather from '../assets/api.png';
 
 
 let text01 = document.querySelector('.work__01');

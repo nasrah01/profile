@@ -1,75 +1,66 @@
 .about {
-    height: 100vh;
+    grid-row: 3 / 4;
+    grid-column: 1 / 2;
     position: relative;
-
-    @media screen and (max-width: 640px){
-        height: 80vh;
-    }
-
-    @media screen and (max-width: 480px){
-        height: 60vh;
-    }
-
-    &__name {
-        font-family: $content-font;
-        font-size: $medium-size;
-        text-transform: uppercase;
-        color:  #f27052;;
-        position: absolute;
-        top: 5%;
-        left: 50%;
-        transform: translateX(-50%);
-
-        @media screen and (max-width: 1440px) and (min-height: 1050px) {
-            top: 15%;
-        }
-
-        @media screen and (max-width: 1366px) {
-            top: 10%;
-            font-size: 2rem;
-        }
-
-        @media screen and (max-width: 640px) and (min-height: 480px){
-            display: none;
-        }
-    }
+    z-index: 4;
 
     &__text {
-        font-size: $medium-large;
+        font-size: 4rem;
         text-align: justify;
         color: #594839;
         position: absolute;
         left: 50%;
         top: 50%;
-        width: 70%;
+        width: 65%;
         transform: translate(-50%, -50%);
 
-        @media screen and (max-width: 1660px) {
-            font-size: 4rem;
-        } 
+        @media screen and (max-width: 1660px) and (max-height: 900px){
+            font-size: 3.4rem;
+        }
 
-        @media screen and (max-width: 1366px) {
-        
-            font-size: 3rem;
-    
-        } 
-
-        @media screen and (max-width: 1152px) {
+        @media screen and (max-width: 1500px) and (max-height: 900px){
             font-size: 3rem;
         }
 
-        @media screen and (max-width: 854px) and (min-height: 480px){
+        @media screen and (max-width: 1280px) and (max-height: 600px) {
+            font-size: 2.5rem;
+        }
+
+        @media screen and (max-width: 950px) and (max-height: 500px) {
+            width: 80%;
+        }
+
+        @media screen and (max-width: 900px) and (max-height: 450px) {
+            width: 90%;
+            left: 50%;
+            top: 50%;
+            transform: translateX(-50%);
             font-size: 2rem;
         }
 
-        @media screen and (max-width: 480px) and (min-height: 320px){
-            font-size: 1.5rem;
+        @media screen and (max-width: 500px) and (max-height: 900px) {
+            top: 0%;
+            transform: translateX(-50%);
+            font-size: 2rem;
+        }
+
+        @media screen and (max-width: 445px) and (max-height: 820px) {
+            width: 90%;
+            font-size: 1.8rem;
+        }
+       
+
+        @media screen and (max-height: 400px) {
+            font-size: 1.8rem;
+            width: 95%;
+            top: 10%
         }
     }
 }
 
 .quote {
-    height: 60vh;
+    grid-row: 6 / 7;
+    grid-column: 1 / 2;
     position: relative;
     margin: 5rem 0;
 
@@ -78,66 +69,36 @@
         margin: 0;
     }
 
-    &__title {
-        font-size: 3rem;
-        position: absolute;
-        left: 50%;
-        top: 15%;
-        transform: translateX(-50%);
-        font-weight: normal;
-        text-transform: uppercase;
-        color: rgb(242, 112, 82);
-
-        @media screen and (max-width: 1600px) {
-            top: 10%;
-        }
-
-        @media screen and (max-width: 1366px) {
-            font-size: 2rem;
-            top: 15%;
-        }
-
-        @media screen and (max-width: 640px) and (min-height: 480px){
-            font-size: 1.4rem;
-        }
-
-        @media screen and (max-width: 480px) and (min-height: 320px){
-            font-size: 1rem;
-        }
-
-        @media screen and (max-width: 481px) and (min-height: 600px) {
-            top: 25%;
-        }
-
-        @media screen and (max-width: 380px) {
-            width: max-content;
-        }
-    }
-
     &__content {
-        font-size: $medium-size;
+        font-size:  4rem;
         position: absolute;
         left: 50%;
-        top: 50%;
+        top: 40%;
         width: 70%;
         transform: translate(-50%, -50%);
         text-align: center;
         color: #594839;
 
-        @media screen and (min-width: 1660px) {
-            font-size: $medium-large;
+        @media screen and (max-width: 1660px) {
+            font-size: $medium-size;
+        }
+
+        @media screen and (max-width: 1152px) {
+            font-size: 3rem;
         }
         
         @media screen and (max-width: 1024px) {
             width: 80%;
+            font-size: 2.5rem;
         }
 
-        @media screen and (max-width: 860px) and (min-height: 480px){
+        @media screen and (max-width: 900px) {
             font-size: 2rem;
         }
 
-        @media screen and (max-width: 480px) and (min-height: 320px){
-            font-size: 1.5rem;
+        @media screen and (max-width: 500px){
+            font-size: 2rem;
+            top: 50%;
         }
     }
 
@@ -145,7 +106,7 @@
         font-size: 3rem;
         position: absolute;
         left: 50%;
-        bottom: 15%;
+        bottom: 25%;
         transform: translateX(-50%);
         color: #F27052;
 
@@ -158,16 +119,17 @@
             bottom: 15%;
         }
 
-        @media screen and (max-width: 640px) and (min-height: 480px){
-            font-size: 1.4rem;
+        @media screen and (max-width: 900px) and (max-height: 500px) {
+            bottom: 0;
         }
 
-        @media screen and (max-width: 480px) and (min-height: 320px){
-            font-size: 1rem;
+        @media screen and (max-width: 500px) and (max-height: 900px){
+            font-size: 1.8rem;
         }
 
-        @media screen and (max-width: 481px) and (min-height: 600px) {
-            bottom: 25%;
+        @media screen and (max-width: 450px) and (max-height: 750px){
+            bottom: 5%;
         }
+
     }
 }

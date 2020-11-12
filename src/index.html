@@ -3,107 +3,147 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="./assets/favicon.png">
-    <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Asar&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Asar&family=Rock+Salt&display=swap" rel="stylesheet">
     <title>Nasrah Abraham</title>
 </head>
 <body>
-    <div id="site__canvas"></div>
-    <div class="navigation" id="start">
-        <div class="navigation__container">
-            <span class="navigation__line navigation__one">&nbsp;</span>
-            <span class="navigation__line navigation__two">&nbsp;</span>
-            <span class="navigation__line navigation__three">&nbsp;</span>
+    <script> 
+        function IEdetection() { 
+            var ua = window.navigator.userAgent; 
+            var msie = ua.indexOf('MSIE '); 
+            if (msie > 0) { 
+                window.location="error.html";
+                // IE 10 or older, return version number  
+                return ('IE ' + parseInt(ua.substring( 
+                    msie + 5, ua.indexOf('.', msie)), 10)); 
+            } 
+            var trident = ua.indexOf('Trident/'); 
+            if (trident > 0) { 
+                window.location="error.html";
+                // IE 11, return version number 
+                var rv = ua.indexOf('rv:'); 
+                return ('IE ' + parseInt(ua.substring( 
+                    rv + 3, ua.indexOf('.', rv)), 10));      
+            }
+        } 
+        IEdetection();  
+    </script> 
+    <div class="main">
+        <div class="navigation" id="index">
+            <div class="navigation__container">
+                <span class="navigation__line navigation__one">&nbsp;</span>
+                <span class="navigation__line navigation__two">&nbsp;</span>
+                <span class="navigation__line navigation__three">&nbsp;</span>
+            </div>
+            <div class="navigation__large"></div>
+            <div id="git">
+                <a href="https://github.com/nasrah01/profile" target="_blank">
+                    <img src="assets/Octocat.png" alt="github link">
+                </a>
+            </div>
         </div>
-        <div class="navigation__large">
-            <ul class="navigation__name">
-                <li class="navigation__content navigation__content--bottomRight"><a href="#contact" class="navigation__ref">Contact</a></li>
-                <li class="navigation__content navigation__content--bottomLeft"><a href="#project" class="navigation__ref">Projects</a></li>
-                <li class="navigation__content navigation__content--topRight"><a href="#me" class="navigation__ref">About</a></li>
-                <li class="navigation__content navigation__content--topLeft"><a href="#start" class="navigation__ref">Home</a></li>
-            </ul>
+        <div class="navigation__small"></div>
+        <div id="start">
+            
+            <div id="site__canvas"></div>
+            <div id="start--name">
+                <p>Nasrah</p>
+                <p>Abraham</p>
+                <p>Gabriel</p>
+            </div>
+            <div id="start-box">
+                <p id="start-box_1">Front</p>
+                <p id="start-box_2">end</p>
+                <p id="start-box_3">developer</p>
+            </div>
+        </div>
+
+        <div class="about" id="me">
+            <p class="about__text">
+                I am a front-end developer based in london. Recently completed studying web design and developement, 
+                working on projects using HTML5, CSS3, Javascript, Jquery, PHP, MySQL, web data using XML, JSON and AJAX. 
+                <br/>I use node.js and webpack 4 to build projects, along with utilising javascript libraries like GSAP, Scrollmagic and three.js 
+                to create beautiful, accessible, responsive and dynamic websites.
+            </p>
+        </div>
+
+
+
+        <div class="work" d="project">
+            <div class="work__intro">Time for some <span>material</span></div>
+        </div>
+
+
+        <div class="projects">
+            <div class="canvas project__canvas--01"></div> 
+            <div class="project">
+                <div class="project__heading">
+                    <h2 class="project__name">University Intranet</h2>
+                    <div class="project__number"> <span>No.01</span> Login System using PHP</div>
+                </div>
+                <div class="project__description">
+                    <p>A prototype for the department of computer science allowing students and faculty to log into the departments intranet system, this includes a restricted administrator login to create new users.</p>
+                    <p>To log in as a student or a member of faculty <br> <span> Username: nasrah, Password: password</span>
+                    <br>To log in with Administrator credentials <br> <span>Username: admin, Password: dcsadmin01</span></p>
+                </div>
+                <div class="project__info">
+                    <div class="project__info--repo"><a href="https://github.com/nasrah01/php_login" target="_blank">View Code</a></div>
+                    <div class="project__info--demo"><a href="https://titan.dcs.bbk.ac.uk/~nabrah01/intranet/index.php" target="_blank">View Project</a></div>
+                </div>
+            </div> 
+            <div class="canvas project__canvas--02"></div>         
+            <div class="project">
+                <div class="project__heading">
+                    <h2 class="project__name">Weather App</h2>
+                    <div class="project__number"> <span>No.02</span> Web data using API, Jquery, AJAX</div>
+                </div>
+                <div class="project__description">
+                    <p>Using the Open Weather Map API, this application retrieves current weather forecast for a selected UK City, this weather app will report alerts for extreme weather conditions including extreme wind speeds, extreme high and low temperatures. </p>
+                </div>
+                <div class="project__info">
+                    <div class="project__info--repo"><a href="https://github.com/nasrah01/web-data" target="_blank">View Code</a></div>
+                    <div class="project__info--demo"><a href="https://titan.dcs.bbk.ac.uk/~nabrah01/wd/fma/task2/apiweather.html" target="_blank">View Project</a></div>
+                </div>
+            </div>
+            <div class="canvas project__canvas--03"></div> 
+            <div class="project">
+                <div class="project__heading">
+                    <h2 class="project__name">Landing page</h2>
+                    <div class="project__number"> <span>No.03</span> Wholesale coffee company</div>
+                </div>
+                <div class="project__description">
+                    <p>Beautifully designed prototype landing page for a coffee bean wholesale company. The approach was to use a responsive design that promotes user interactivity by using GSAP to create parallax effects and animations.</p>
+                </div>
+                <div class="project__info">
+                    <div class="project__info--repo"><a href="https://github.com/nasrah01/animated_coffee" target="_blank">View Code</a></div>
+                    <div class="project__info--demo"><a href="https://titan.dcs.bbk.ac.uk/~nabrah01/coffee/index.html" target="_blank">View Project</a></div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="quote">
+            <p class="quote__content">"People think that computer science is the art of geniuses but the actual reality is the opposite, just many people doing things that build on each other, like a wall of mini stones."</p>
+            <p class="quote__author">Donald Knuth</p>
+        </div>
+
+
+        <div class="contact" id="contact">
+            <div class="contact__canvas"></div>
+            <div class="contact__title">contact</div>
+            <div class="contact__layer">
+                <h4 class="contact__layer--title"> Get in touch</h4>
+                <h3 class="contact__layer--desc">I'd love to hear from you</h3>
+                <p class="contact__layer--mail"><a href="mailto:nasrahdev.gmail.com">nasrahdev@gmail.com</a></p>
+            </div>
+            <div class="contact__link">
+                <h3 class="contact__link--title">Github</h3>
+                <p class="contact__link--desc1">Click below for my github page</p>
+                <p class="contact__link--desc"><a href="https://github.com/nasrah01" target="_blank">Nasrah01</a></p>
+            </div>
+            <img src="assets/nasrah.jpg" alt="profile picture" class="contact__img01">
+            <img src="assets/pexel.jpg" alt="backgorund" class="contact__img02">
         </div>
     </div>
-    <div id="git">
-        <a href="https://github.com/nasrah01/profile" target="_blank">
-            <img src="assets/Octocat.png" alt="github link">
-        </a>
-    </div>
-    <div id="start">
-        <div id="start--name">
-            <p>Nasrah</p>
-            <p>Abraham</p>
-            <p>Gabriel</p>
-        </div>
-        <div id="start-box">
-            <p id="start-box_1">Front</p>
-            <p id="start-box_2">end</p>
-            <p id="start-box_3">developer</p>
-        </div>
-    </div>
-    <div class="about" id="me">
-        <div class="about__name">About me</div>
-        <p class="about__text">
-            Hi, I'm Nasrah a front-end developer based in london. Recently completed studying web design and developement, 
-            I had the opportunity to work on projects using HTML5, CSS3, Javascript, Jquery, PHP, MySQL, web data using XML, JSON and AJAX. 
-            <br/>I use node.js and webpack 4 to build projects, along with utilising javascript libraries like GSAP, Scrollmagic and three.js 
-            to create beautiful, accessible, responsive and dynamic websites.
-        </p>
-    </div>
-    <div class="work">
-        <div class="work__intro">
-            <p class="work__01"> TIME FOR</p>
-            <p class="work__02"> SOME</p>
-            <p class="work__03">Material</p> 
-        </div>
-    </div>
-   <div class="project project__canvas--01" id="project">
-        <h2 class="project__name">Landing page</h2>
-        <div class="project__number"> <span>No.01</span> Wholesale coffee company</div>
-        <div class="project__info">
-            <div class="project__info--repo"><a href="https://github.com/nasrah01/animated_coffee" target="_blank">View Code</a></div>
-            <div class="project__info--demo"><a href="https://titan.dcs.bbk.ac.uk/~nabrah01/coffee/index.html" target="_blank">View Project</a></div>
-        </div>
-    </div>         
-    <div class="project project__canvas--02">
-        <h2 class="project__name">Weather App</h2>
-        <div class="project__number"> <span>No.02</span> Web data using API, Jquery, AJAX</div>
-        <div class="project__info">
-            <div class="project__info--repo"><a href="https://github.com/nasrah01/web-data" target="_blank">View Code</a></div>
-            <div class="project__info--demo"><a href="https://titan.dcs.bbk.ac.uk/~nabrah01/wd/fma/task2/apiweather.html" target="_blank">View Project</a></div>
-        </div>
-    </div>
-    <div class="project project__canvas--03">
-        <h2 class="project__name">University Intranet</h2>
-        <div class="project__number"> <span>No.03</span> Login System using PHP</div>
-        <div class="project__info">
-            <div class="project__info--repo"><a href="https://github.com/nasrah01/php_login" target="_blank">View Code</a></div>
-            <div class="project__info--demo"><a href="https://titan.dcs.bbk.ac.uk/~nabrah01/intranet/index.php" target="_blank">View Project</a></div>
-        </div>
-    </div>
-    <div class="quote">
-        <h2 class="quote__title">philosophy towards programming</h2>
-        <p class="quote__content">"People think that computer science is the art of geniuses but the actual reality is the opposite, just many people doing things that build on each other, like a wall of mini stones."</p>
-        <p class="quote__author">Donald Knuth</p>
-    </div>
-    <div class="contact" id="contact">
-        <div class="contact__canvas"></div>
-        <div class="contact__title">contact</div>
-        <div class="contact__layer">
-            <h4 class="contact__layer--title"> Get in touch</h4>
-            <h3 class="contact__layer--desc">I'd love to hear from you</h3>
-            <p class="contact__layer--mail"><a href="mailto:nasrahdev.gmail.com">nasrahdev@gmail.com</a></p>
-        </div>
-        <div class="contact__link">
-            <h3 class="contact__link--title">Github</h3>
-            <p class="contact__link--desc1">Click below for my github page</p>
-            <p class="contact__link--desc"><a href="https://github.com/nasrah01" target="_blank">Nasrah01</a></p>
-        </div>
-        <img src="assets/nasrah.jpg" alt="profile picture" class="contact__img01">
-        <img src="assets/pexel.jpg" alt="backgorund" class="contact__img02">
-    </div>
-    <div id="container"></div>
 </body>
 </html>

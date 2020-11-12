@@ -1,6 +1,4 @@
 @mixin linkLight {
-    font-size: 1.8rem;
-    
     a {
        color: #594839;
         background-image: linear-gradient(0.10turn, #F27052, #F27052);
@@ -13,15 +11,5 @@
     a:hover {
         background-size: 100% 1px;
         color: #F27052;
-    }
-}
-
-@keyframes revealText {
-    from {
-        opacity: 0;
-    }
-
-    to {
-        opacity: 1;
     }
 }

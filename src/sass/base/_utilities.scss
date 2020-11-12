@@ -60,3 +60,105 @@ ol, ul {
 a {
     text-decoration: none;
 }
+
+.main {
+    height: 100%;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 7vh 100vh 100vh 20vh max-content 50vh 100vh;
+
+
+    @media screen and (max-width: 500px) and (max-height: 900px) {
+        grid-template-rows: 7vh 100vh 60vh 10vh max-content 50vh 100vh;
+    }
+
+    @media screen and (max-width: 420px) and (max-height: 790px) {
+        grid-template-rows: 7vh 100vh 50vh 15vh max-content 50vh 100vh;
+    }
+
+    @media screen and (max-width: 360px) and (max-height: 650px) {
+        grid-template-rows: 7vh 100vh 70vh 15vh max-content 50vh 100vh;
+    }
+}
+
+.error__page {
+    height: 100vh;
+    position: relative;
+}
+
+.error__container {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    @media screen and (max-width: 750px) {
+        width: 100%;
+    }
+
+    @media screen and (max-width: 1000px) and (max-height: 500px) {
+        width: 100%;
+    }
+}
+
+.error__heading {
+    text-align: center;
+    padding-bottom: 2rem;
+    color:  #404040;
+    font-size: 3.2rem;
+}
+
+.error__message {
+    text-align: center;
+    padding-bottom: 2rem;
+    color:  #404040;
+    font-size: 2.2rem;
+
+    @media screen and (max-width: 700px) {
+        font-size: 1.8rem;
+    }
+}
+
+.browsers {
+    width: 100%;
+    float: left;
+    margin-left: 20%;
+
+    @media screen and (max-width: 1000px) {
+        margin-left: 15%;
+    }
+
+    @media screen and (max-width: 750px) {
+        margin-left: 20%;
+    }
+
+    @media screen and (max-width: 500px) {
+        margin-left: 15%;
+    }
+
+    @media screen and (max-width: 400px) {
+        margin-left: 5%;
+    }
+}
+
+.browser__container {
+    float: left;
+    padding: 2rem;
+}
+
+.browser__container h2 {
+    text-align: center;
+    color:  #404040;
+    font-size: 1.8rem;
+}
+
+.browser__container img {
+    width: 100px;
+    height: 100px;
+
+    @media screen and (max-width: 800px) {
+       width: 80px;
+       height: 80px;
+    }
+}

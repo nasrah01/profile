@@ -4,6 +4,10 @@
     position: relative;
     background-color: rgba(242, 230, 223, .3);
 
+    @media screen and (max-width: 500px) {
+        background-color: #fff;
+    }
+
     &__text {
         font-size: 4rem;
         text-align: justify;

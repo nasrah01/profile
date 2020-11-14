@@ -1,7 +1,4 @@
-import * as THREE from 'three';
 import {gsap} from "gsap";
-import { AmbientLight, Camera, PerspectiveCamera, Scene, PointLight } from 'three';
-
 
     const bar = document.querySelector('.navigation__large');
     const burger = document.querySelector('.navigation__small');
@@ -29,8 +26,8 @@ export const links = () => {
 
 
     tl
-    .to(lineOne, { y: 8, yoyo: true, ease: "Power1.easeInOut", duration: .2})
-    .to(lineThree, { y: -4.5, yoyo: true, ease: "Power1.easeInOut", duration: .2}, '-=0.2')
+    .to(lineOne, { y: 9, yoyo: true, ease: "Power1.easeInOut", duration: .2})
+    .to(lineThree, { y: -3, yoyo: true, ease: "Power1.easeInOut", duration: .2}, '-=0.2')
     .to(lineOne, {rotation:-45, duration: .3})
     .to(lineTwo, {opacity: 0,  duration: .3}, '-=.3')
     .to(lineThree, {rotation:45,  duration: .3}, '-=.3') 

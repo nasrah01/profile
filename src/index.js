@@ -6,8 +6,4 @@ import * as Backdrop from './view/landing';
 Backdrop.textReveal();
 Backdrop.bubble();
 Navigate.links();
-
-if(window.innerWidth > 600) {
-    Projects.work();
-}
 Projects.projectImages();

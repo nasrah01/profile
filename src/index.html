@@ -13,14 +13,14 @@
             var msie = ua.indexOf('MSIE '); 
             if (msie > 0) { 
                 window.location="error.html";
-                // IE 10 or older, return version number  
+                // IE 10 or older 
                 return ('IE ' + parseInt(ua.substring( 
                     msie + 5, ua.indexOf('.', msie)), 10)); 
             } 
             var trident = ua.indexOf('Trident/'); 
             if (trident > 0) { 
                 window.location="error.html";
-                // IE 11, return version number 
+                // IE 11 
                 var rv = ua.indexOf('rv:'); 
                 return ('IE ' + parseInt(ua.substring( 
                     rv + 3, ua.indexOf('.', rv)), 10));      
@@ -69,7 +69,7 @@
 
 
 
-        <div class="work" d="project">
+        <div class="work" id="project">
             <div class="work__intro">Time for some <span>material</span></div>
         </div>
 
@@ -83,8 +83,6 @@
                 </div>
                 <div class="project__description">
                     <p>A prototype for the department of computer science allowing students and faculty to log into the departments intranet system, this includes a restricted administrator login to create new users.</p>
-                    <p>To log in as a student or a member of faculty <br> <span> Username: nasrah, Password: password</span>
-                    <br>To log in with Administrator credentials <br> <span>Username: admin, Password: dcsadmin01</span></p>
                 </div>
                 <div class="project__info">
                     <div class="project__info--repo"><a href="https://github.com/nasrah01/php_login" target="_blank">View Code</a></div>

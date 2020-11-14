@@ -1,4 +1,5 @@
 import * as THREE from 'three';
+import {gsap} from "gsap";
 import heading from '../assets/code01.jpg';
 import { EffectComposer } from 'three/examples/jsm/postprocessing/EffectComposer.js';
 import { ShaderPass } from 'three/examples/jsm/postprocessing/ShaderPass.js';
@@ -95,3 +96,14 @@ export const bubble = () => {
 				composer.render( time );
 			}
 };
+
+export const textReveal = () => {
+
+	const reveal = gsap.timeline({delay: .5});
+
+   	reveal.to("#start-box_1", { duration: 0.75, y: 0, opacity: 1})
+	reveal.to("#start-box_2", { duration: 0.75, y: 0, opacity: 1}, '-=.5')
+	reveal.to("#start-box_3", { duration: 0.75, y: 0, opacity: 1}, '-=.5')
+	reveal.to("#start--name", { duration: 0.75, opacity: 1}, '-=.1')
+	reveal.to(".navigation", { duration: 0.75, y: 0}, '-=.5');
+}

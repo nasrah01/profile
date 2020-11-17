@@ -9,7 +9,7 @@ import { MaskPass, ClearMaskPass } from 'three/examples/jsm/postprocessing/MaskP
 import { CopyShader } from 'three/examples/jsm/shaders/CopyShader.js';
 
 export const bubble = () => {
-    const content = document.getElementById('site__canvas');
+   /*  const content = document.getElementById('site__canvas');
 
 			let camera, composer, renderer;
 			let shape;
@@ -26,7 +26,7 @@ export const bubble = () => {
 
 				const scene1 = new THREE.Scene();
 				
-				const geometry = new THREE.CircleGeometry( 5, 32 );
+				const geometry = new THREE.TorusKnotBufferGeometry( 5, 3, 100, 16 );
 
 				shape = new THREE.Mesh(geometry);
 				
@@ -93,17 +93,18 @@ export const bubble = () => {
 
 				renderer.clear();
 				composer.render( time );
-			}
+			} */
+
+			console.log('image insert');
 };
 
 export const textReveal = () => {
 
 	const reveal = gsap.timeline({delay: .5});
 
-   	reveal.to("#start-box_1", { duration: 0.75, y: 0, opacity: 1})
-	reveal.to("#start-box_2", { duration: 0.75, y: 0, opacity: 1}, '-=.5')
-	reveal.to("#start-box_3", { duration: 0.75, y: 0, opacity: 1}, '-=.5')
-	reveal.to("#start--name", { duration: 0.75, opacity: 1}, '-=.1')
+   	reveal.to("#start__name--01", { duration: 0.75, y: 0, opacity: 1})
+	reveal.to("#start__name--02", { duration: 0.75, y: 0, opacity: 1}, '-=.5')
+	reveal.to("#start__name--03", { duration: 0.75, y: 0, opacity: 1}, '-=.5')
 	reveal.to(".navigation", { duration: 0.75, y: 0}, '-=.5');
 }
 

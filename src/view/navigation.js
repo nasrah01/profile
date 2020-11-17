@@ -26,12 +26,12 @@ export const links = () => {
 
 
     tl
-    .to(lineOne, { y: 9, yoyo: true, ease: "Power1.easeInOut", duration: .2})
-    .to(lineThree, { y: -3, yoyo: true, ease: "Power1.easeInOut", duration: .2}, '-=0.2')
+    .to(lineOne, { y: 7, yoyo: true, ease: "Power1.easeInOut", duration: .2})
+    .to(lineThree, { y: -1.5, yoyo: true, ease: "Power1.easeInOut", duration: .2}, '-=0.2')
     .to(lineOne, {rotation:-45, duration: .3})
     .to(lineTwo, {opacity: 0,  duration: .3}, '-=.3')
     .to(lineThree, {rotation:45,  duration: .3}, '-=.3') 
-    .to(burger, {css:{backgroundColor:"#594839", backgroundImage: 'linear-gradient(315deg, #594839 0%, #594839 74%)'}, duration: .1, ease:"Power1.easeOut"}, '-=.1')
+    .to(burger, {css:{backgroundColor:"#594839", backgroundImage: 'linear-gradient(315deg, #fff 0%, #fff 74%)'}, duration: .1, ease:"Power1.easeOut"}, '-=.1')
     .fromTo(screen,{ css: {width: "0%"}, ease: "Circ.easeIn"}, { css:{width: "100%"}, ease: "Circ.easeOut" , duration: .5}, '-=.1')
     .to(items, 0.5, { css: {display: "block"}, ease: "Power1.easeOut"}, 0.5, "-=0.1")
 

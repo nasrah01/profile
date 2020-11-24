@@ -15,8 +15,8 @@ export const links = () => {
     const lineOne = document.querySelector('.navigation__one');
     const lineTwo = document.querySelector('.navigation__two');
     const lineThree = document.querySelector('.navigation__three');
-    const burger = document.querySelectorAll('.navigation__line');
-    const items = document.querySelectorAll('.navigation__small ul');
+    const items = document.querySelectorAll('.navigation__small li');
+   console.log(items);
     const screen = document.querySelector('.navigation__small');
     const hamburger = document.querySelector('.navigation__container');
 
@@ -26,16 +26,17 @@ export const links = () => {
 
 
     tl
-    .to(lineOne, { y: 7, yoyo: true, ease: "Power1.easeInOut", duration: .2})
-    .to(lineThree, { y: -1.5, yoyo: true, ease: "Power1.easeInOut", duration: .2}, '-=0.2')
-    .to(lineOne, {rotation:-45, duration: .3})
-    .to(lineTwo, {opacity: 0,  duration: .3}, '-=.3')
-    .to(lineThree, {rotation:45,  duration: .3}, '-=.3') 
-    .to(burger, {css:{backgroundColor:"#594839", backgroundImage: 'linear-gradient(315deg, #fff 0%, #fff 74%)'}, duration: .1, ease:"Power1.easeOut"}, '-=.1')
-    .fromTo(screen,{ css: {width: "0%"}, ease: "Circ.easeIn"}, { css:{width: "100%"}, ease: "Circ.easeOut" , duration: .5}, '-=.1')
-    .to(items, 0.5, { css: {display: "block"}, ease: "Power1.easeOut"}, 0.5, "-=0.1")
-
-
+    .to(lineOne, { y:'-9px', transformOrigin: '50% 50%', duration: .2})
+    .to(lineThree, { y:'9px', transformOrigin: '50% 50%', duration: .2}, '-=0.2')
+    .to(lineTwo, {scale:0.1, transformOrigin: '50% 50%', duration: .3}, '-=.3')
+    .add('rotate')
+    .to(lineOne, {y:'5', duration: .3})
+    .to(lineThree, {y:'-5',  duration: .3}, '-=.3') 
+    .to(lineOne, {rotationZ:45, transformOrigin: '50% 50%', duration: .3})
+    .to(lineThree, {rotationZ:-45, transformOrigin: '50% 50%',  duration: .3}, '-=.3') 
+    .fromTo(screen,{ css: {width: "0%"}, ease: "Circ.easeIn"}, { css:{width: "100%"}, ease: "Circ.easeOut" , duration: .5}, '-=.6')
+    .to(items, { css: {display: "block", x: 0, opacity: 1}, ease: "Power1.easeOut", duration: .3}, '-=.2')
+    
     hamburger.addEventListener('click', () => {
         if (tl.reversed()) {
             tl.play();

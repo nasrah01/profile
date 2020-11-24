@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,300&family=Source+Serif+Pro&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;1,300&family=Linden+Hill&display=swap" rel="stylesheet">
     <title>Nasrah Abraham</title>
 </head>
 <body>
@@ -30,12 +30,12 @@
         IEdetection();  
     </script> 
     <div class="main">
+        <svg class="navigation__container" width="30" class="openmenu" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30">
+            <path class="navigation__one" d="M0 9h30v2H0z"/>
+            <line class="navigation__two" x1="0" y1="15" x2="30" y2="15" stroke="#b9cbd0" stroke-width="2" vector-effect="non-scaling-stroke"/>
+            <path class="navigation__three" d="M0 19h30v2H0z"/>
+        </svg>
         <div class="navigation" id="index">
-            <div class="navigation__container">
-                <span class="navigation__line navigation__one">&nbsp;</span>
-                <span class="navigation__line navigation__two">&nbsp;</span>
-                <span class="navigation__line navigation__three">&nbsp;</span>
-            </div>
             <div class="navigation__large"></div>
             <div id="git">
                 <a href="https://github.com/nasrah01/profile" target="_blank">
@@ -55,50 +55,55 @@
         </div>
         <div class="about" id="me">
             <p class="about__text">
-                I am a front-end developer based in London. Recently completed studying web design and developement. I've worked 
-                on projects using HTML5, CSS3, Javascript, Jquery, PHP, MySQL, web data using XML, JSON and AJAX. 
-                <br/>I use node.js and webpack 4 to build projects, along with using javascript libraries like GSAP, Scrollmagic and three.js 
+                I am a front-end developer based in London. Recently completed studying web developement. I've delivered applications utilizing HTML5, CSS3, Javascript, Jquery, PHP, MySQL, web data using XML, JSON and AJAX. 
+                <br/>I use npm and webpack 4 to manage my dependencies, along with using javascript libraries like GSAP, Scrollmagic and three.js 
                 to create beautiful, accessible, responsive and dynamic websites.
             </p>
         </div>
         <div class="projects" id="project">
-            <div class="canvas project__canvas--01"></div> 
-            <div class="project">
-                <div class="project__heading">
-                    <div class="project__number"> <span>No.01</span> Login System using PHP</div>
-                </div>
-                <div class="project__description">
-                    <p>A prototype for the department of computer science allowing students and faculty to log into the departments intranet system, this includes a restricted administrator login to create new users.</p>
-                </div>
-                <div class="project__info">
-                    <div class="project__info--repo"><a href="https://github.com/nasrah01/php_login" target="_blank">View Code</a></div>
-                    <div class="project__info--demo"><a href="https://titan.dcs.bbk.ac.uk/~nabrah01/intranet/index.php" target="_blank">View Project</a></div>
-                </div>
-            </div> 
-            <div class="canvas project__canvas--02"></div>         
-            <div class="project">
-                <div class="project__heading">
-                    <div class="project__number"> <span>No.02</span> Web data using API, Jquery, AJAX</div>
-                </div>
-                <div class="project__description">
-                    <p>Using the Open Weather Map API, this application retrieves current weather forecast for a selected UK City, this weather app will report alerts for extreme weather conditions including extreme wind speeds, extreme high and low temperatures. </p>
-                </div>
-                <div class="project__info">
-                    <div class="project__info--repo"><a href="https://github.com/nasrah01/web-data" target="_blank">View Code</a></div>
-                    <div class="project__info--demo"><a href="https://titan.dcs.bbk.ac.uk/~nabrah01/wd/fma/task2/apiweather.html" target="_blank">View Project</a></div>
+            <div class="project__wrap">
+                <div class="canvas project__canvas--01"></div> 
+                <div class="project">
+                    <div class="project__heading">
+                        <div class="project__number"> <span>No.01</span> Login System using PHP</div>
+                    </div>
+                    <div class="project__description">
+                        <p>A prototype for the department of computer science allowing students and faculty to log into the departments intranet system, this includes a restricted administrator login to create new users.</p>
+                    </div>
+                    <div class="project__info">
+                        <div class="project__info--repo"><a href="https://github.com/nasrah01/php_login" target="_blank">View Code</a></div>
+                        <div class="project__info--demo"><a href="https://titan.dcs.bbk.ac.uk/~nabrah01/intranet/index.php" target="_blank">View Project</a></div>
+                    </div>
+                </div> 
+            </div>
+            <div class="project__wrap">
+                <div class="canvas project__canvas--02"></div>         
+                <div class="project">
+                    <div class="project__heading">
+                        <div class="project__number"> <span>No.02</span> Web data using API, Jquery, AJAX</div>
+                    </div>
+                    <div class="project__description">
+                        <p>Using the Open Weather Map API, this application retrieves current weather forecast for a selected UK City, this weather app will report alerts for extreme weather conditions including extreme wind speeds, extreme high and low temperatures. </p>
+                    </div>
+                    <div class="project__info">
+                        <div class="project__info--repo"><a href="https://github.com/nasrah01/web-data" target="_blank">View Code</a></div>
+                        <div class="project__info--demo"><a href="https://titan.dcs.bbk.ac.uk/~nabrah01/wd/fma/task2/apiweather.html" target="_blank">View Project</a></div>
+                    </div>
                 </div>
             </div>
-            <div class="canvas project__canvas--03"></div> 
-            <div class="project">
-                <div class="project__heading">
-                    <div class="project__number"> <span>No.03</span> Wholesale coffee company</div>
-                </div>
-                <div class="project__description">
-                    <p>Beautifully designed prototype landing page for a coffee bean wholesale company. The approach was to use a responsive design that promotes user interactivity by using GSAP to create parallax effects and animations.</p>
-                </div>
-                <div class="project__info">
-                    <div class="project__info--repo"><a href="https://github.com/nasrah01/animated_coffee" target="_blank">View Code</a></div>
-                    <div class="project__info--demo"><a href="https://titan.dcs.bbk.ac.uk/~nabrah01/coffee/index.html" target="_blank">View Project</a></div>
+            <div class="project__wrap">
+                <div class="canvas project__canvas--03"></div> 
+                <div class="project">
+                    <div class="project__heading">
+                        <div class="project__number"> <span>No.03</span> Wholesale coffee company</div>
+                    </div>
+                    <div class="project__description">
+                        <p>Beautifully designed prototype landing page for a coffee bean wholesale company. The approach was to use a responsive design that promotes user interactivity by using GSAP to create parallax effects and animations.</p>
+                    </div>
+                    <div class="project__info">
+                        <div class="project__info--repo"><a href="https://github.com/nasrah01/animated_coffee" target="_blank">View Code</a></div>
+                        <div class="project__info--demo"><a href="https://titan.dcs.bbk.ac.uk/~nabrah01/coffee/index.html" target="_blank">View Project</a></div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -123,8 +128,11 @@
                 <p class="contact__link--desc1">Click below for my github page</p>
                 <p class="contact__link--desc"><a href="https://github.com/nasrah01" target="_blank">Nasrah01</a></p>
             </div>
-            <img src="assets/nasrah.jpg" alt="profile picture" class="contact__img01">
-            <img src="assets/pexel.jpg" alt="backgorund" class="contact__img02">
+            <div class="contact__image">
+                <div class="contact__layering"></div>
+                <img src="assets/nasrah.jpg" alt="profile picture" class="contact__img01">
+                <img src="assets/project.jpg" alt="backgorund" class="contact__img02">
+            </div>
         </div>
     </div>
 </body>

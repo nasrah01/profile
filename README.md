@@ -1,6 +1,7 @@
 # **Portfolio**
 
 Single page portfolio using HTML5, CSS3, and Javascript ES6
+Responsive design
 
 #### JavaScript libraries used:
 * GSAP 3
@@ -13,8 +14,7 @@ Single page portfolio using HTML5, CSS3, and Javascript ES6
 
 #### Colour Palette used:
 ```
-1. #594839
-2. #F2E6DF
-3. #D9886A
-4. #F27052
+1. #2b3a41
+2. #b9cbd0
+3. ##ecbb9c
 ```

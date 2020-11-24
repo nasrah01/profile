@@ -1,6 +1,6 @@
 # **Portfolio**
 
-Single page portfolio using HTML5, CSS3, and Javascript ES6
+Single page portfolio using HTML5, CSS3, and Javascript ES6,
 Responsive design
 
 #### JavaScript libraries used:
@@ -16,5 +16,5 @@ Responsive design
 ```
 1. #2b3a41
 2. #b9cbd0
-3. ##ecbb9c
+3. #ecbb9c
 ```

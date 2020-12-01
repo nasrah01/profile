@@ -1,12 +1,12 @@
 @mixin linkLight {
     a, a:focus {
         padding: 0 1rem;
-        color: white;
+        color: #000;
         border-radius: 50px;
         background-image: linear-gradient(0.10turn, #76adbd, #b9cbd0);
     }
 
-    /* a:hover, a:active {
-        border: 1px solid black;
-    } */
+    a:hover, a:active {
+        background-image: linear-gradient(0.10turn, #b9cbd0, #76adbd);
+    } 
 }

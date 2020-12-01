@@ -35,7 +35,7 @@
             <line class="navigation__two" x1="0" y1="15" x2="30" y2="15" stroke="#b9cbd0" stroke-width="2" vector-effect="non-scaling-stroke"/>
             <path class="navigation__three" d="M0 19h30v2H0z"/>
         </svg>
-        <div class="navigation" id="index">
+        <div class="navigation">
             <div class="navigation__large"></div>
             <div id="git">
                 <a href="https://github.com/nasrah01/profile" target="_blank">
@@ -45,7 +45,6 @@
         </div>
         <div class="navigation__small"></div>
         <div id="start">
-            
             <div id="site__canvas"></div>
             <div id="start__name">
                 <p id="start__name--01">Nasrah Abraham</p>
@@ -54,13 +53,58 @@
             </div>
         </div>
         <div class="about" id="me">
+            <img src="./assets/accessible.png" alt="" class="about__image">
             <p class="about__text">
                 I am a front-end developer based in London. Recently completed studying web developement. I've delivered applications utilizing HTML5, CSS3, Javascript, Jquery, PHP, MySQL, web data using XML, JSON and AJAX. 
                 <br/>I use npm and webpack 4 to manage my dependencies, along with using javascript libraries like GSAP, Scrollmagic and three.js 
-                to create beautiful, accessible, responsive and dynamic websites.
+                to create beautiful, accessible, responsive, and dynamic websites.
             </p>
+            <div class="about__box about__box--1">
+                <img src="./assets/problems.png" alt="" class="about__box--img">
+                <h3>Problem-solving</h3>
+                <p>I have a passion for creating websites and applications, adopting an appropriate strategy to finding solutions for problems</p>
+            </div>
+            <div class="about__box about__box--2">
+                <img src="./assets/access.png" alt="" class="about__box--img">
+                <h3>accessibility</h3>
+                <p>Using HTML5 semantics to achieve web accessibility and maximizing readability with color contrasts and font choices.</p>
+            </div>
+            <div class="about__box about__box--3">
+                <img src="./assets/responsive.png" alt="" class="about__box--img">
+                <h3>responsive</h3>
+                <p>Creating pixel perfect layout for different screen sizes allowing users to intuitively navigate through a website, with the use of media queries, CSS grid, and flexbox. </p>
+            </div>
+            <div class="about__box about__box--4">
+                <img src="./assets/rocket.png" alt="" class="about__box--img">
+                <h3>Fast</h3>
+                <p>Cutting the load time of websites by utilizing strategies like lazy loading, using html srcset to use different image sizes based on the users’ screen size.</p>
+            </div>
         </div>
         <div class="projects" id="project">
+            <div class="popup__window">
+                <div class="popup__content">
+                    <div class="popup__left">
+                        <span class="popup__close">&times;</span>
+                        <img src="assets/login02.png" alt="" class="popup__img popup__img1">
+                        <img src="assets/login01.png" alt="" class="popup__img popup__img2">
+                        <img src="assets/login.png" alt="" class="popup__img popup__img3">
+                    </div>
+                    <div class="popup__right">
+                        <h2>Login Details</h2>
+                        <p>To log in to the department of computer science intranet portal use one 
+                            of the following login credentials </p>
+                        <p>Student login <br>
+                            <span>username:</span> nasrah
+                            <span>password:</span> password
+                        </p>
+                        <p>Administrator login <br>
+                            <span>username:</span> admin
+                            <span>password:</span> dcsadmin01
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="projects__title">const projects = () => { </div>
             <div class="project__wrap">
                 <div class="canvas project__canvas--01"></div> 
                 <div class="project">
@@ -68,7 +112,7 @@
                         <div class="project__number"> <span>No.01</span> Login System using PHP</div>
                     </div>
                     <div class="project__description">
-                        <p>A prototype for the department of computer science allowing students and faculty to log into the departments intranet system, this includes a restricted administrator login to create new users.</p>
+                        <p>A prototype for the department of computer science allowing students and faculty to log into the departments intranet system with a robust form validation, this includes a restricted administrator login to create new users. click to view <span id="popup">ADMIN & USER</span> login details</p>
                     </div>
                     <div class="project__info">
                         <div class="project__info--repo"><a href="https://github.com/nasrah01/php_login" target="_blank">View Code</a></div>
@@ -83,7 +127,7 @@
                         <div class="project__number"> <span>No.02</span> Web data using API, Jquery, AJAX</div>
                     </div>
                     <div class="project__description">
-                        <p>Using the Open Weather Map API, this application retrieves current weather forecast for a selected UK City, this weather app will report alerts for extreme weather conditions including extreme wind speeds, extreme high and low temperatures. </p>
+                        <p>Using the Open Weather Map API, this application retrieves current weather forecast for a selected UK City, this weather app will report alerts for extreme weather conditions including extreme wind speeds, extreme high and low temperatures. Background changes dependent on the weather description </p>
                     </div>
                     <div class="project__info">
                         <div class="project__info--repo"><a href="https://github.com/nasrah01/web-data" target="_blank">View Code</a></div>
@@ -106,15 +150,12 @@
                     </div>
                 </div>
             </div>
+            <div class="projects__title"> };</div>
         </div>
-
-
         <div class="quote">
             <p class="quote__content">"People think that computer science is the art of geniuses but the actual reality is the opposite, just many people doing things that build on each other, like a wall of mini stones."</p>
             <p class="quote__author">Donald Knuth</p>
         </div>
-
-
         <div class="contact" id="contact">
             <div class="contact__canvas"></div>
             <div class="contact__title">contact</div>

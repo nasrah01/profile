@@ -1,19 +1,20 @@
 .navigation {
     grid-column: 1 / 2;
     grid-row: 1 / 2;
-    position: relative;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
     z-index: 5000;
     display: grid;
     grid-template-columns: max-content 1fr;
     padding: 1rem 3rem;
     transform: translateY(-150px);
-    background-color: #2b3a41;
+    background-color: rgba(43, 58, 65, .7);
     font-family: $content-font;
     font-style: italic;
 
-    @media screen and (max-width: 500px) {
-        padding: 5% 2%;
-    }
+   
     
 
     &__large {  
@@ -85,7 +86,7 @@
     // hamburger icon
     &__container {
         position: fixed;
-        top: 3%;
+        top: 1.5%;
         right: 5%;
         cursor: pointer;
         text-align: center;

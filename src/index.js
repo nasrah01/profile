@@ -7,3 +7,4 @@ Backdrop.textReveal();
 Backdrop.bubble();
 Navigate.links();
 Projects.projectImages();
+Projects.popup();

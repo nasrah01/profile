@@ -3,7 +3,7 @@ import {gsap} from "gsap";
     const bar = document.querySelector('.navigation__large');
     const burger = document.querySelector('.navigation__small');
 
-    const naviLinks = `<ul class="navigation__menu"><li class="navigation__content"><a href="#index" class="navigation__ref">Home</a></li>
+    const naviLinks = `<ul class="navigation__menu"><li class="navigation__content"><a href="#start" class="navigation__ref">Home</a></li>
     <li class="navigation__content"><a href="#me" class="navigation__ref">About</a></li>
     <li class="navigation__content"><a href="#project" class="navigation__ref">Projects</a></li>
     <li class="navigation__content"><a href="#contact" class="navigation__ref">Contact</a></li></ul>`;

@@ -27,3 +27,18 @@ export const projectImages = () => {
 		createCanvas(canvas03, coffee, coffeeLink); 
 	
 };
+
+export const popup = () => {
+
+	const container = document.getElementById('popup');
+	const open = document.querySelector('.popup__window');
+	const close = document.querySelector('.popup__close');
+
+	container.addEventListener('click', () => {
+		open.style.display = 'block';
+	});
+
+	close.addEventListener('click', () => {
+		open.style.display = 'none';
+	});
+};

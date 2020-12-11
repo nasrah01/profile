@@ -19,6 +19,3 @@ Responsive design
 3. #ecbb9c
 ```
 
-1. #2b3a41
-2. #b9cbd0
-3. #ecbb9c

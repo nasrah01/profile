@@ -30,7 +30,7 @@
         IEdetection();  
     </script> 
     <div class="main" id="main">
-        <svg class="navigation__container" width="30" class="openmenu" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30">
+        <svg class="navigation__container openmenu" width="30" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30">
             <path class="navigation__one" d="M0 9h30v2H0z"/>
             <line class="navigation__two" x1="0" y1="15" x2="30" y2="15" stroke="#b9cbd0" stroke-width="2" vector-effect="non-scaling-stroke"/>
             <path class="navigation__three" d="M0 19h30v2H0z"/>
@@ -53,11 +53,6 @@
             </div>
         </div>
         <div class="about" id="me">
-            <!-- <div class="about__image">
-                <img src="./assets/api01.png" alt="" class="about__image--1">
-                <img src="./assets/coffee02.png" alt="" class="about__image--2">
-                <img src="./assets/login02.png" alt="" class="about__image--3">
-            </div> -->
             <img src="./assets/accessible.png" alt="" class="about__image">
             <p class="about__text">
                 I am a front-end developer based in London. Recently completed studying web developement. I've delivered applications utilizing HTML5, CSS3, Javascript, Jquery, PHP, MySQL, web data using XML, JSON and AJAX. 
@@ -85,59 +80,65 @@
                 <p>Cutting the load time of websites by utilizing strategies like lazy loading, using html srcset to use different image sizes based on the users’ screen size.</p>
             </div>
         </div>
+
+        <div class="project__title">
+            <h2>Projects</h2>
+        </div>
+
+
         <div class="projects" id="project">
-            <div class="projects__title">Projects</div>
-            <div class="project__wrap">
-                <div class="canvas project__canvas--01"></div> 
-                <div class="project">
-                    <div class="project__heading">
-                        <div class="project__number"> <span>No.01</span> Login System using PHP</div>
-                    </div>
-                    <div class="project__description">
-                        <p>A prototype for the department of computer science allowing students and faculty to log into the departments intranet system with a robust form validation, this includes a restricted administrator login to create new users. Click to view <span id="popup">Admin & User</span> login details</p>
-                    </div>
-                    <div class="project__info">
-                        <div class="project__info--repo"><a href="https://github.com/nasrah01/php_login" target="_blank">View Code</a></div>
-                        <div class="project__info--demo"><a href="https://titan.dcs.bbk.ac.uk/~nabrah01/intranet/index.php" target="_blank">View Project</a></div>
-                    </div>
-                </div> 
-            </div>
-            <div class="project__wrap">
-                <div class="canvas project__canvas--02"></div>         
-                <div class="project">
-                    <div class="project__heading">
-                        <div class="project__number"> <span>No.02</span> Web data using API, AJAX, JSON</div>
-                    </div>
-                    <div class="project__description">
-                        <p>Using the Open Weather Map API, this application retrieves current weather forecast for a selected UK City, this weather app will report alerts for extreme weather conditions including extreme wind speeds, extreme high and low temperatures. Background changes dependent on the weather description </p>
-                    </div>
-                    <div class="project__info">
-                        <div class="project__info--repo"><a href="https://github.com/nasrah01/web-data" target="_blank">View Code</a></div>
-                        <div class="project__info--demo"><a href="https://titan.dcs.bbk.ac.uk/~nabrah01/wd/fma/task2/apiweather.html" target="_blank">View Project</a></div>
-                    </div>
+
+             
+            <div class="project project--01">
+                <div class="project__heading">
+                    <div class="project__number"> <span>No.01</span> Login System using PHP</div>
+                </div>
+                <div class="project__description">
+                    <p>A prototype for the department of computer science allowing students and faculty to log into the departments intranet system with a robust form validation, this includes a restricted administrator login to create new users. Click to view <span id="popup">Admin & User</span> login details</p>
+                </div>
+                <div class="project__info">
+                    <div class="project__info--repo"><a href="https://github.com/nasrah01/php_login" target="_blank">View Code</a></div>
+                    <div class="project__info--demo"><a href="https://titan.dcs.bbk.ac.uk/~nabrah01/intranet/index.php" target="_blank">View Project</a></div>
+                </div>
+            </div> 
+
+                    
+            <div class="project project--02">
+                <div class="project__heading">
+                    <div class="project__number"> <span>No.02</span> Web data using API, AJAX, JSON</div>
+                </div>
+                <div class="project__description">
+                    <p>Using the Open Weather Map API, this application retrieves current weather forecast for a selected UK City, this weather app will report alerts for extreme weather conditions including extreme wind speeds, extreme high and low temperatures. Background changes dependent on the weather description </p>
+                </div>
+                <div class="project__info">
+                    <div class="project__info--repo"><a href="https://github.com/nasrah01/web-data" target="_blank">View Code</a></div>
+                    <div class="project__info--demo"><a href="https://titan.dcs.bbk.ac.uk/~nabrah01/wd/fma/task2/apiweather.html" target="_blank">View Project</a></div>
                 </div>
             </div>
-            <div class="project__wrap">
-                <div class="canvas project__canvas--03"></div> 
-                <div class="project">
-                    <div class="project__heading">
-                        <div class="project__number"> <span>No.03</span> Wholesale coffee company</div>
-                    </div>
-                    <div class="project__description">
-                        <p>Beautifully designed prototype landing page for a coffee bean wholesale company. The approach was to use a responsive design that promotes user interactivity by using GSAP to create parallax effects and animations.</p>
-                    </div>
-                    <div class="project__info">
-                        <div class="project__info--repo"><a href="https://github.com/nasrah01/animated_coffee" target="_blank">View Code</a></div>
-                        <div class="project__info--demo"><a href="https://titan.dcs.bbk.ac.uk/~nabrah01/coffee/index.html" target="_blank">View Project</a></div>
-                    </div>
+            
+             
+            <div class="project project--03">
+                <div class="project__heading">
+                    <div class="project__number"> <span>No.03</span> Wholesale coffee company</div>
+                </div>
+                <div class="project__description">
+                    <p>Beautifully designed prototype landing page for a coffee bean wholesale company. The approach was to use a responsive design that promotes user interactivity by using GSAP to create parallax effects and animations.</p>
+                </div>
+                <div class="project__info">
+                    <div class="project__info--repo"><a href="https://github.com/nasrah01/animated_coffee" target="_blank">View Code</a></div>
+                    <div class="project__info--demo"><a href="https://titan.dcs.bbk.ac.uk/~nabrah01/coffee/index.html" target="_blank">View Project</a></div>
                 </div>
             </div>
+
         </div>
-        <div class="quote">
-            <p class="quote__content">"People think that computer science is the art of geniuses but the actual reality is the opposite, just many people doing things that build on each other, like a wall of mini stones."</p>
-            <p class="quote__author">Donald Knuth</p>
-        </div>
+
+
+
         <div class="contact" id="contact">
+            <div class="quote">
+                <p class="quote__content">"People think that computer science is the art of geniuses but the actual reality is the opposite, just many people doing things that build on each other, like a wall of mini stones."</p>
+                <p class="quote__author">Donald Knuth</p>
+            </div>
             <div class="contact__canvas"></div>
             <div class="contact__title">contact</div>
             <div class="contact__layer">
@@ -151,9 +152,7 @@
                 <p class="contact__link--desc"><a href="https://github.com/nasrah01" target="_blank">Nasrah01</a></p>
             </div>
             <div class="contact__image">
-                <div class="contact__layering"></div>
-                <img src="assets/nasrah.jpg" alt="profile picture" class="contact__img01">
-                <img src="assets/project.jpg" alt="backgorund" class="contact__img02">
+                <img src="assets/nasrah.jpg" alt="profile picture" class="contact__img01">   
             </div>
         </div>
         <div class="popup__window">

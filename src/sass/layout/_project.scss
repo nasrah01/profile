@@ -1,65 +1,122 @@
-.projects {
+.project__title {
     grid-row: 4 / 5;
     grid-column: 1 / 2;
-    background: #FFF;
+    color: #94a5aa;
+    background: #fff;
+    padding: 5rem;
 
+    @media screen and (max-width: 700px) {
+        padding: 0;
+        padding-top: 2rem;
+    }
 
-    &__title {
-        font-size: 14rem;
-        color: #b9cbd0; 
+    h2 {
         font-family: $heading-font;
-        text-align: center;
-        padding: 3rem 0 7rem 0;
         font-weight: 300;
         font-style: italic;
-
-        @media screen and (max-width: 1280px) {
-            font-size: 12rem;
-        }
-
-        @media screen and (max-width: 800px) and (max-height: 450px) {
-            font-size: 8rem;
-        }
+        font-size: 12rem;
+        text-align: center;
 
         @media screen and (max-width: 700px) {
             font-size: 8rem;
         }
-        @media screen and (max-width: 450px) {
-            font-size: 10rem;
-        }
+    }
+}
+
+.projects {
+    grid-row: 5 / 6;
+    grid-column: 1 / 2;
+    background: #FFF;
+    display: grid;
+    grid-template-columns: repeat(2, 50vw);
+    grid-template-rows: repeat(3, 1fr);
+    grid-row-gap: 20rem;
+    padding-bottom: 20rem;
+    place-items: center;
+
+    @media screen and (max-width: 1440px) {
+        padding-bottom: 10rem;
+        grid-column-gap: 5rem;
+        grid-row-gap: 10rem;
+    }
+
+    @media screen and (max-width: 1000px) {
+        grid-template-columns: 100vw;
+        grid-template-rows: 280px 1fr 280px 1fr 280px 1fr;
+        padding-bottom: 0;
+        grid-column-gap: 0;
+        grid-row-gap: 0;
     }
 }
 
 .canvas {
-    grid-column: 1 / 2;
-    grid-row: 1/ 2;
-    justify-self: end;
-    align-self: end;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    padding: 5rem;
 
-    @media screen and (max-width: 1000px) {
-        align-self: center;
+    @media screen and (max-width: 700px) {
+        padding: 0 2rem;
     }
 
-    
+    &--01 {
+        grid-row: 1 / 2;
+        grid-column: 1 / 2;
+    }
+
+    &--02 {
+        grid-row: 2 / 3;
+        grid-column: 2 / 3;
+
+        @media screen and (max-width: 1000px) {
+            grid-row: 3 / 4;
+            grid-column: 1 / 2;
+        }
+    }
+
+    &--03 {
+        grid-row: 3 / 4;
+        grid-column: 1 / 2;
+
+        @media screen and (max-width: 1000px) {
+            grid-row: 5 / 6;
+            grid-column: 1 / 2;
+        }
+    }
 
     &__image {
-        width: 800px;
-        height: 500px;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 700px;
+        height: 400px;
 
-        @media screen and (max-width: 1700px) {
-            width: 650px;
-            height: 380px;
+        &--01 {
+            left: 55%;
+        }
+    
+        &--02 {
+           left: 45%;
+        }
+    
+        &--03 {
+            left: 55%;
         }
 
-        @media screen and (max-width: 1440px) {
+        @media screen and (max-width: 1700px) {
             width: 550px;
             height: 320px;
         }
 
-        @media screen and (max-width: 1336px) {
+        @media screen and (max-width: 1440px) {
             width: 500px;
             height: 280px;
+        }
+
+        @media screen and (max-width: 1000px) {
+            left: 50%;
         }
 
         @media screen and (max-width: 600px) {
@@ -81,50 +138,80 @@
 }
 
 .project {
-    grid-column: 2 / 3;
-    grid-row: 1/ 2;
+    width: 70%;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: max-content 1fr max-content;
+    grid-template-rows: max-content max-content max-content;
     grid-gap: 2rem;
 
-    @media screen and (max-width: 1000px) {
-        grid-gap: 1rem;
+    @media screen and (max-width: 1440px) {
+        width: 80%;
     }
 
+    @media screen and (max-width: 1000px) {
+        grid-gap: 2rem;
+        padding-bottom: 3rem;
+        width: 90%;
+    }
 
-    &__wrap {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: 1fr;
-        margin-bottom: 20rem;
-        grid-gap: 5rem;
-
+    &--01 {
+        grid-row: 1 / 2;
+        grid-column: 2 / 3;
+        justify-self: start;
 
         @media screen and (max-width: 1000px) {
-            display: flex;
-            flex-direction: column;
-            flex-wrap: wrap;
-            justify-content: center;
-            align-items: center;
+            grid-row: 2 / 3;
+            grid-column: 1 / 2;
+            align-self: start;
+            justify-self: center;
         }
+    }
 
-        @media screen and (max-width: 500px) {
-           margin-bottom: 10rem;
+    &--02 {
+        grid-row: 2 / 3;
+        grid-column: 1 / 2;
+        justify-self: end;
+
+        @media screen and (max-width: 1000px) {
+            grid-row: 4 / 5;
+            grid-column: 1 / 2;
+            align-self: start;
+            justify-self: center;
         }
-       
+    }
+
+    &--03 {
+        grid-row: 3 / 4;
+        grid-column: 2 / 3;
+        justify-self: start;
+
+        @media screen and (max-width: 1000px) {
+            grid-row: 6 / 7;
+            grid-column: 1 / 2;
+            align-self: start;
+            justify-self: center;
+        }
     }
 
     &__heading {
         grid-row: 1 / 2;
         grid-column: 1 / 2;
         padding-top: 2rem;
+        align-self: end;
         font-family: $heading-font;
         font-weight: bold;
         color: rgb(58, 58, 58);
 
         @media screen and (max-width: 1000px) {
             justify-self: center;
+        }
+
+        @media screen and (max-width: 700px) {
+            padding-top: 0;
+        }
+
+        @media screen and (max-width: 500px) {
+            justify-self: start;
         }
     }
 
@@ -133,7 +220,6 @@
         font-style: italic;
 
         span {
-            color: #F27052;
             font-size: $small-medium;
         }
 
@@ -141,9 +227,7 @@
             font-size: 2.5rem;
         }
 
-        @media screen and (max-width: 1220px) {
-            font-size: 2rem;
-        }
+        
     }
 
     &__description {
@@ -151,7 +235,6 @@
         grid-row: 2 / 3;
         grid-column: 1 / 2;
         align-self: center;
-        width: 70%;
 
         span {
             font-style: italic;
@@ -167,16 +250,12 @@
             font-size: 2rem;
         }
 
-        @media screen and (max-width: 1220px) {
-            font-size: 1.8rem;
-        }
-
         @media screen and (max-width: 1000px) {
             justify-self: center;
         }
 
         @media screen and (max-width: 500px) {
-            width: 85%;
+            width: 100%;
         }
     }
 

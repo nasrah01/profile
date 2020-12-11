@@ -2,29 +2,29 @@ import coffee from '../assets/coffee01.png';
 import weather from '../assets/api.png';
 import data from '../assets/login.png';
 
-const canvas01 = document.querySelector('.project__canvas--01');
-const canvas02 = document.querySelector('.project__canvas--02');
-const canvas03 = document.querySelector('.project__canvas--03');
+const canvas01 = document.querySelector('.project--01');
+const canvas02 = document.querySelector('.project--02');
+const canvas03 = document.querySelector('.project--03');
 
 const coffeeLink = "https://titan.dcs.bbk.ac.uk/~nabrah01/coffee/index.html";
 const apiLink = "https://titan.dcs.bbk.ac.uk/~nabrah01/wd/fma/task2/apiweather.html";
 const intranetLink = "https://titan.dcs.bbk.ac.uk/~nabrah01/intranet/index.php";
 
-function createCanvas (canvas, image, link) {
+function createCanvas (canvas, image, link, num) {
 
-	const insertImage = `<a href="${link}" target="_blank"><img src="${image}" alt="project image" class="canvas__image" /></a>`;
-	canvas.insertAdjacentHTML('beforeend', insertImage);
+	const insertImage = `<a href="${link}" target="_blank" class="canvas project__canvas--${num}"><img src="${image}" alt="project image" class="canvas__image canvas__image--${num}" /></a>`;
+	canvas.insertAdjacentHTML('afterend', insertImage);
 	
 }
 
 
 export const projectImages = () => {
 
-		createCanvas(canvas01, data, intranetLink);
+		createCanvas(canvas01, data, intranetLink, "01");
 
-		createCanvas(canvas02, weather, apiLink);
+		createCanvas(canvas02, weather, apiLink, "02");
 
-		createCanvas(canvas03, coffee, coffeeLink); 
+		createCanvas(canvas03, coffee, coffeeLink, "03"); 
 	
 };
 
